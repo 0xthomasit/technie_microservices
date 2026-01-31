@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongo:8.2.4
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: thomas
+      MONGO_INITDB_ROOT_PASSWORD: 12345678
+      MONGO_INITDB_DATABASE: product-service
+    volumes:
+      - ./data/mongodb:/data/db

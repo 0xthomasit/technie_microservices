@@ -18,7 +18,7 @@ class ProductServiceApplicationTests {
 
     // Initialize MongoDbContainer
     @ServiceConnection
-    // (no need to define mongodb URI, Spring Boot will automatically inject the related Url details for our application properties
+    // (no need to define mongodb URI, Spring Boot will automatically inject the related Url details for our application.properties
     static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:8.2.4");
 
     @LocalServerPort
